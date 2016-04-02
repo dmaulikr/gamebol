@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MovieViewController.h
 //  GambolChallenge
 //
 //  Created by Sovanlandy Pheng on 3/26/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface MovieViewController : UIViewController
+@property(nonatomic, retain) NSString * videoName;
 @end
-
