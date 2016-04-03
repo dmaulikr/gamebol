@@ -7,7 +7,7 @@
 //
 
 #import "ShoeOnViewController.h"
-#import "MovieViewController.h"
+#import "KinectViewController.h"
 #import <AVFoundation/AVFoundation.h>
 @interface ShoeOnViewController ()
 
@@ -17,22 +17,14 @@
 
 AVAudioPlayer *xplayer;
 AVAudioPlayer *dplayer;
-bool shouldPushToNextScreen;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setBackgroundImage];
     [self playMusic:@"wear_shoe"];
-    shouldPushToNextScreen = false;
     // Do any additional setup after loading the view.
 }
 
-- (void) viewWillAppear:(BOOL)animated{
-    if(shouldPushToNextScreen) {
-        [self buttonClickedNext: self.dummyButton];
-    }
-    shouldPushToNextScreen = !shouldPushToNextScreen;
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -42,11 +34,10 @@ bool shouldPushToNextScreen;
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if ([segue.identifier isEqualToString:@"PlayMovie"])
+    if ([segue.identifier isEqualToString:@"Kinect"])
     {
-        MovieViewController *destViewController = segue.destinationViewController;
+        KinectViewController *destViewController = segue.destinationViewController;
         destViewController.videoName = self.videoName;
-
     }
 }
 
@@ -61,15 +52,10 @@ bool shouldPushToNextScreen;
 
 - (IBAction)buttonClicked:(id)sender {
     [self playClick:@"click"];
-    [self performSelector:@selector(transition:) withObject:sender afterDelay:1.5];
+    [self performSelector:@selector(goToKinect:) withObject:sender afterDelay:1.5];
 }
 
-
-- (void) transition: (id)sender {
-    [self performSegueWithIdentifier:@"PlayMovie" sender:sender];
-}
-
-- (IBAction)buttonClickedNext:(id)sender {
+- (void)goToKinect:(id)sender {
     [self performSegueWithIdentifier:@"Kinect" sender:sender];
 }
 
@@ -81,7 +67,7 @@ bool shouldPushToNextScreen;
 
 - (void)playMusic: (NSString*) fileName {
     
-    NSString *musicPath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+    NSString *musicPath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"wav"];
     NSURL *musicURL = [NSURL fileURLWithPath:musicPath];
     
     xplayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicURL error:nil];

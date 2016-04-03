@@ -96,43 +96,11 @@ static NSString * const reuseIdentifier = @"ShoeCell";
     NSString *nameOver = [NSString stringWithFormat:@"%@_over.png", _shoes[row]];
     UIImage *imageOver = [UIImage imageNamed: nameOver];
     [cell.shoeButton setBackgroundImage: imageOver forState:UIControlStateHighlighted];
-    
-    NSString *nameSelect = [NSString stringWithFormat:@"%@_over.png", _shoes[row]];
-    UIImage *imageSelect = [UIImage imageNamed: nameSelect];
-    [cell.shoeButton setBackgroundImage: imageSelect forState:UIControlStateSelected];
     return cell;
 }
 
 
 #pragma mark <UICollectionViewDelegate>
-
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-
-//// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-//- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-//	return YES;
-//}
-//
-//- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-//	return YES;
-//}
-//
-//- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-//    
-//}
 
 
 - (void) setBackgroundImage {
@@ -151,7 +119,7 @@ static NSString * const reuseIdentifier = @"ShoeCell";
 }
 
 - (void)playMusic: (NSString*) fileName {
-    NSString *musicPath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+    NSString *musicPath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"wav"];
     NSURL *musicURL = [NSURL fileURLWithPath:musicPath];
     if([zplayer isPlaying]) return;
     zplayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicURL error:nil];
@@ -170,23 +138,4 @@ static NSString * const reuseIdentifier = @"ShoeCell";
     [bplayer play];
 }
 
--(void) setTitle {
-    UIFont * customFont = [UIFont fontWithName:@"Battambong-Bold" size:18]; //custom font
-    NSString * text = @"សូមជ្រើសរើសម៉ូតស្បែកជើងហ្គេមបូល";
-    
-    CGSize labelSize = [text sizeWithFont:customFont constrainedToSize:CGSizeMake(20, 20) lineBreakMode:NSLineBreakByTruncatingTail];
-    
-    UILabel *fromLabel = [[UILabel alloc]initWithFrame:CGRectMake(91, 15, labelSize.width, labelSize.height)];
-    fromLabel.text = text;
-    fromLabel.font = customFont;
-    fromLabel.numberOfLines = 1;
-    fromLabel.baselineAdjustment = UIBaselineAdjustmentAlignBaselines; // or UIBaselineAdjustmentAlignCenters, or UIBaselineAdjustmentNone
-    fromLabel.adjustsFontSizeToFitWidth = YES;
-    fromLabel.minimumScaleFactor = 10.0f/12.0f;
-    fromLabel.clipsToBounds = YES;
-    fromLabel.backgroundColor = [UIColor clearColor];
-    fromLabel.textColor = [UIColor whiteColor];
-    fromLabel.textAlignment = NSTextAlignmentLeft;
-    [self.collectionView addSubview:fromLabel];
-}
 @end

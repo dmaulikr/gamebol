@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface KinectViewController : UIViewController
 @property(nonatomic, weak) IBOutlet UIButton *dummyButton;
+@property(nonatomic, strong) NSString* videoName;
 @end

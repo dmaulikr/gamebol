@@ -10,6 +10,5 @@
 
 @interface ShoeOnViewController : UIViewController
 @property(nonatomic, weak) IBOutlet UIButton *readyButton;
-@property (nonatomic, weak) IBOutlet UIButton *dummyButton;
 @property(nonatomic, retain) NSString * videoName;
 @end

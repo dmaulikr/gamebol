@@ -6,15 +6,16 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="Battambang-Bold.ttf">
-            <string>Battambang-Bold</string>
-            <string>Battambang-Bold</string>
-            <string>Battambang-Bold</string>
-            <string>Battambang-Bold</string>
-            <string>Battambang-Bold</string>
+        <mutableArray key="Kantumruy-Bold.ttf">
+            <string>Kantumruy-Bold</string>
+            <string>Kantumruy-Bold</string>
+            <string>Kantumruy-Bold</string>
+            <string>Kantumruy-Bold</string>
+            <string>Kantumruy-Bold</string>
+            <string>Kantumruy-Bold</string>
         </mutableArray>
-        <mutableArray key="Battambang-Regular.ttf">
-            <string>Battambang</string>
+        <mutableArray key="Superclarendon Bold.ttf">
+            <string>SuperclarendonRg-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -31,19 +32,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkm-RX-rj5">
-                                <rect key="frame" x="247" y="433" width="534" height="133"/>
+                                <rect key="frame" x="145" y="419" width="723" height="152"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                <fontDescription key="fontDescription" name="Battambang-Bold" family="Battambang" pointSize="24"/>
-                                <state key="normal" title="ចូលទៅកាន់ Gambol Challenge" backgroundImage="btn_Enter_normal.png"/>
+                                <fontDescription key="fontDescription" name="Kantumruy-Bold" family="Kantumruy" pointSize="35"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="15"/>
+                                <state key="normal" title="       ចូលទៅកាន់" backgroundImage="enter_btn.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <state key="selected" backgroundImage="btn_Enter_over.png"/>
-                                <state key="highlighted" backgroundImage="btn_Enter_over.png"/>
+                                <state key="highlighted" backgroundImage="enter_btn_over.png"/>
                                 <connections>
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uVf-8X-RxI"/>
                                     <segue destination="LlE-Ym-XjA" kind="presentation" identifier="SelectGame" id="58Z-C0-iTS"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gambol Challenge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyo-IS-gzu">
+                                <rect key="frame" x="416" y="464" width="386" height="44"/>
+                                <fontDescription key="fontDescription" name="SuperclarendonRg-Bold" family="Superclarendon" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="s8e-eY-vR4">
-                                <rect key="frame" x="247" y="58" width="516" height="346"/>
+                                <rect key="frame" x="304" y="70" width="432" height="299"/>
                             </imageView>
                         </subviews>
                     </view>
@@ -76,7 +86,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="217" height="375"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5t-Ag-jeM">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5t-Ag-jeM">
                                             <rect key="frame" x="13" y="11" width="196" height="356"/>
                                             <connections>
                                                 <action selector="buttonClicked:" destination="LlE-Ym-XjA" eventType="touchUpInside" id="x2g-ly-A19"/>
@@ -107,7 +117,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="82" id="3xg-bg-UZT"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="Battambang-Bold" family="Battambang" pointSize="24"/>
+                                    <fontDescription key="fontDescription" name="Kantumruy-Bold" family="Kantumruy" pointSize="35"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -135,25 +145,25 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="NcA-f9-KJc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="Flr-vZ-flQ">
-                            <size key="itemSize" width="294" height="103"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Flr-vZ-flQ">
+                            <size key="itemSize" width="220" height="110"/>
                             <size key="headerReferenceSize" width="50" height="275"/>
-                            <size key="footerReferenceSize" width="50" height="75"/>
-                            <inset key="sectionInset" minX="30" minY="0.0" maxX="50" maxY="0.0"/>
+                            <size key="footerReferenceSize" width="50" height="115"/>
+                            <inset key="sectionInset" minX="170" minY="0.0" maxX="170" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SizeCell" id="hsx-yG-89r" customClass="SizeCollectionViewCell">
-                                <rect key="frame" x="143" y="275" width="294" height="103"/>
+                                <rect key="frame" x="190" y="275" width="220" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="294" height="103"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="220" height="110"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="duR-v5-uj9">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duR-v5-uj9">
                                             <rect key="frame" x="27" y="11" width="241" height="81"/>
-                                            <state key="normal">
-                                                <attributedString key="attributedTitle"/>
-                                            </state>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                                            <state key="normal" title=""/>
                                             <connections>
                                                 <action selector="buttonClicked:" destination="yZQ-Ul-ZdK" eventType="touchUpInside" id="Rga-Re-R9S"/>
                                                 <segue destination="Sfw-1T-Xco" kind="show" identifier="ReadyToGo" id="z4R-t7-8WK"/>
@@ -178,45 +188,43 @@
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="តើអ្នកពាក់ទំហំស្បែកជើងលេងប៉ុន្មាន" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8VC-xH-sK4">
-                                    <rect key="frame" x="0.0" y="213" width="592" height="45"/>
+                                    <rect key="frame" x="0.0" y="199" width="592" height="67"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="45" id="qH8-WJ-QPd"/>
+                                        <constraint firstAttribute="height" constant="67" id="lV1-aM-biA"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="Battambang-Bold" family="Battambang" pointSize="24"/>
+                                    <fontDescription key="fontDescription" name="Kantumruy-Bold" family="Kantumruy" pointSize="35"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="8VC-xH-sK4" firstAttribute="trailing" secondItem="KeN-U3-Iq3" secondAttribute="trailingMargin" id="W0u-eZ-zaa"/>
-                                <constraint firstItem="8VC-xH-sK4" firstAttribute="leading" secondItem="KeN-U3-Iq3" secondAttribute="leading" id="ciQ-rp-2hZ"/>
-                                <constraint firstAttribute="bottomMargin" secondItem="8VC-xH-sK4" secondAttribute="bottom" constant="9" id="md1-V2-Cx4"/>
+                                <constraint firstItem="8VC-xH-sK4" firstAttribute="trailing" secondItem="KeN-U3-Iq3" secondAttribute="trailingMargin" id="Ej4-9b-Pj9"/>
+                                <constraint firstAttribute="bottomMargin" secondItem="8VC-xH-sK4" secondAttribute="bottom" constant="1" id="W7u-ag-nJt"/>
+                                <constraint firstItem="8VC-xH-sK4" firstAttribute="leading" secondItem="KeN-U3-Iq3" secondAttribute="leading" id="gFd-7X-E2s"/>
                             </constraints>
                         </collectionReusableView>
                         <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sizeFooter" id="Woc-sV-fVA">
-                            <rect key="frame" x="0.0" y="378" width="600" height="75"/>
+                            <rect key="frame" x="0.0" y="385" width="600" height="115"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ern-0b-ePW">
-                                    <rect key="frame" x="87" y="8" width="427" height="75"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ern-0b-ePW">
+                                    <rect key="frame" x="170" y="20" width="261" height="87"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="427" id="MvN-UW-mcy"/>
+                                        <constraint firstAttribute="width" constant="261" id="nmu-ou-PNE"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="Battambang-Bold" family="Battambang" pointSize="20"/>
-                                    <state key="normal" title="ខ្ញុំមិនចាំ" backgroundImage="btn_Enter_normal.png">
-                                        <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="titleShadowColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                    </state>
-                                    <state key="highlighted" backgroundImage="btn_Enter_over.png"/>
+                                    <fontDescription key="fontDescription" name="Kantumruy-Bold" family="Kantumruy" pointSize="24"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="11"/>
+                                    <state key="normal" title="ខ្ញុំមិនចាំ" backgroundImage="btn_donrem.png"/>
+                                    <state key="highlighted" backgroundImage="btn_donrem_over.png"/>
                                     <connections>
                                         <action selector="buttonClicked:" destination="yZQ-Ul-ZdK" eventType="touchUpInside" id="bdO-CT-s5o"/>
                                     </connections>
                                 </button>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="Ern-0b-ePW" firstAttribute="top" secondItem="Woc-sV-fVA" secondAttribute="topMargin" id="3fs-8G-8P2"/>
-                                <constraint firstItem="Ern-0b-ePW" firstAttribute="centerX" secondItem="Woc-sV-fVA" secondAttribute="centerX" constant="0.5" id="d0b-Ca-1Qn"/>
-                                <constraint firstItem="Ern-0b-ePW" firstAttribute="centerY" secondItem="Woc-sV-fVA" secondAttribute="centerY" constant="8" id="jiR-n2-pxq"/>
+                                <constraint firstItem="Ern-0b-ePW" firstAttribute="top" secondItem="Woc-sV-fVA" secondAttribute="topMargin" constant="12" id="AjS-4U-Lpm"/>
+                                <constraint firstItem="Ern-0b-ePW" firstAttribute="centerX" secondItem="Woc-sV-fVA" secondAttribute="centerX" id="Ic0-XP-aVL"/>
+                                <constraint firstItem="Ern-0b-ePW" firstAttribute="bottom" secondItem="Woc-sV-fVA" secondAttribute="bottomMargin" id="hkC-eE-xMs"/>
                             </constraints>
                         </collectionReusableView>
                         <connections>
@@ -241,70 +249,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ឡូយ!!!  ឥឡូវនេះ សូមពាក់ស្បែកជើង ហ្គេមបូល ដែលអ្នកបានពេញចិត្ត" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phf-0E-GjM">
-                                <rect key="frame" x="88" y="225" width="422" height="106"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ឡូយ!!!  ឥឡូវនេះ សូមពាក់ស្បែកជើង ហ្គេមបូល ដែលអ្នកពេញចិត្ត" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phf-0E-GjM">
+                                <rect key="frame" x="65" y="215" width="480" height="137"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="106" id="ctD-hv-1jk"/>
+                                    <constraint firstAttribute="height" constant="137" id="ctD-hv-1jk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Battambang-Bold" family="Battambang" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Kantumruy-Bold" family="Kantumruy" pointSize="35"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5b-xj-5X9">
-                                <rect key="frame" x="288" y="385" width="461" height="121"/>
-                                <fontDescription key="fontDescription" name="Battambang" family="Battambang" pointSize="24"/>
-                                <state key="normal" title="រួចរាល់ ត្រៀម ចាប់ផ្តើម!!" backgroundImage="btn_Enter_over.png">
+                                <rect key="frame" x="288" y="385" width="461" height="128"/>
+                                <fontDescription key="fontDescription" name="Kantumruy-Bold" family="Kantumruy" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="17"/>
+                                <state key="normal" title="  រួចរាល់ ត្រៀម ចាប់ផ្តើម!!" backgroundImage="enter_btn.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="selected" backgroundImage="btnSize_over.png"/>
-                                <state key="highlighted" backgroundImage="btn_Enter_over.png"/>
+                                <state key="highlighted" backgroundImage="enter_btn_over.png"/>
                                 <state key="focused" backgroundImage="btnSize_over.png"/>
                                 <connections>
-                                    <action selector="buttonClicked:" destination="Sfw-1T-Xco" eventType="touchUpInside" id="vEr-3G-D4t"/>
-                                    <segue destination="q5q-eJ-HNR" kind="show" identifier="PlayMovie" id="OF5-Fe-u9n"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuS-Qs-bTY">
-                                <rect key="frame" x="557" y="572" width="1" height="8"/>
-                                <connections>
-                                    <action selector="buttonClickedNext:" destination="Sfw-1T-Xco" eventType="touchDragInside" id="W0g-B3-jB0"/>
-                                    <segue destination="QTh-e5-bpz" kind="presentation" identifier="Kinect" modalTransitionStyle="crossDissolve" id="plC-nf-MwP"/>
+                                    <action selector="buttonClicked:" destination="Sfw-1T-Xco" eventType="touchUpInside" id="euc-UE-WP0"/>
+                                    <segue destination="QTh-e5-bpz" kind="show" identifier="Kinect" id="cLq-tZ-hw9"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="phf-0E-GjM" firstAttribute="top" secondItem="Zyn-zu-1cz" secondAttribute="bottom" constant="205" id="1V2-sW-f1A"/>
-                            <constraint firstItem="phf-0E-GjM" firstAttribute="leading" secondItem="omN-T0-Qb0" secondAttribute="leadingMargin" constant="68" id="fnP-Cq-Yub"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="phf-0E-GjM" secondAttribute="trailing" constant="70" id="nNK-Sg-0j2"/>
+                            <constraint firstItem="phf-0E-GjM" firstAttribute="top" secondItem="Zyn-zu-1cz" secondAttribute="bottom" constant="195" id="1V2-sW-f1A"/>
+                            <constraint firstItem="phf-0E-GjM" firstAttribute="leading" secondItem="omN-T0-Qb0" secondAttribute="leadingMargin" constant="45" id="fnP-Cq-Yub"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="phf-0E-GjM" secondAttribute="trailing" constant="35" id="nNK-Sg-0j2"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dummyButton" destination="AuS-Qs-bTY" id="GcZ-5W-uak"/>
                         <outlet property="readyButton" destination="V5b-xj-5X9" id="eSu-E6-ehq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hm8-Hc-L34" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2529" y="175"/>
-        </scene>
-        <!--Movie View Controller-->
-        <scene sceneID="6iR-4k-v3G">
-            <objects>
-                <viewController id="q5q-eJ-HNR" customClass="MovieViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="HzM-rB-uaw"/>
-                        <viewControllerLayoutGuide type="bottom" id="mr4-iy-5Cd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1KQ-cQ-mol">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zwj-vm-Ugk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3300" y="721"/>
         </scene>
         <!--Kinect View Controller-->
         <scene sceneID="Mac-jT-y2q">
@@ -335,8 +318,11 @@
     </scenes>
     <resources>
         <image name="btnSize_over.png" width="476" height="201"/>
-        <image name="btn_Enter_normal.png" width="323" height="74"/>
-        <image name="btn_Enter_over.png" width="326" height="72"/>
-        <image name="logo.png" width="279" height="226"/>
+        <image name="btn_Enter_over.png" width="2048" height="1536"/>
+        <image name="btn_donrem.png" width="664" height="210"/>
+        <image name="btn_donrem_over.png" width="664" height="210"/>
+        <image name="enter_btn.png" width="1585" height="256"/>
+        <image name="enter_btn_over.png" width="1585" height="256"/>
+        <image name="logo.png" width="889" height="723"/>
     </resources>
 </document>

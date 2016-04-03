@@ -22,7 +22,6 @@ static NSString * const reuseIdentifier = @"SizeCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -83,7 +82,7 @@ static NSString * const reuseIdentifier = @"SizeCell";
     image = [UIImage imageNamed: name];
     [cell.sizeButton setBackgroundImage: image forState:UIControlStateNormal];
     [cell.sizeButton setTitle: _sizes[row] forState:UIControlStateNormal];
-    cell.sizeButton.titleLabel.font = [UIFont fontWithName:@"Marker Felt" size:24];
+    cell.sizeButton.titleLabel.font = [UIFont fontWithName:@"Superclarendon" size:30];
     [cell.sizeButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
     // selected state
@@ -125,6 +124,20 @@ static NSString * const reuseIdentifier = @"SizeCell";
 }
 */
 
+- (UIEdgeInsets)collectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(0, 170, 0 , 170); // top, left, bottom, right
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+    
+    return 0.0;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
+    return 0.0;
+}
+
+
 - (void) setBackgroundImage {
     UIGraphicsBeginImageContext(self.view.frame.size);
     [[UIImage imageNamed:@"bg_selectshoes.png"] drawInRect:self.view.bounds];
@@ -142,7 +155,7 @@ static NSString * const reuseIdentifier = @"SizeCell";
 
 - (void)playMusic: (NSString*) fileName {
     
-    NSString *musicPath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+    NSString *musicPath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"wav"];
     NSURL *musicURL = [NSURL fileURLWithPath:musicPath];
     
     vplayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicURL error:nil];

@@ -13,16 +13,23 @@
 @end
 
 AVAudioPlayer *wplayer;
+AVAudioPlayer *entryPlayer;
 
 @implementation StartViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setBackgroundImage];
-    [self centerButton];
-    [[[UIApplication sharedApplication] delegate] performSelector:@selector(playMusic)];
+    self.mybutton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+
     // Do any additional setup after loading the view, typically from a nib.
+    [self performSelector:@selector(playEntryMusic) withObject:nil afterDelay:2.0];
 }
+
+- (void) viewWillAppear:(BOOL)animated {
+    [[[UIApplication sharedApplication] delegate] performSelector:@selector(playMusic)];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -38,9 +45,19 @@ AVAudioPlayer *wplayer;
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
 }
 
-- (void)playMusic: (NSString*) fileName {
+- (void) playEntryMusic {
+    NSString *musicPath = [[NSBundle mainBundle] pathForResource:@"enter_gambol" ofType:@"wav"];
+    NSURL *musicURL = [NSURL fileURLWithPath:musicPath];
+        entryPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicURL error:nil];
+    [    entryPlayer setNumberOfLoops:0];
     
-    NSString *musicPath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+    [entryPlayer prepareToPlay];
+    [entryPlayer play];
+}
+
+- (void)playMusic: (NSString*) fileName fileType: (NSString*)fileType {
+    
+    NSString *musicPath = [[NSBundle mainBundle] pathForResource:fileName ofType:fileType];
     NSURL *musicURL = [NSURL fileURLWithPath:musicPath];
     wplayer = nil;
     wplayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicURL error:nil];
@@ -53,7 +70,7 @@ AVAudioPlayer *wplayer;
 - (IBAction)buttonClicked:(id)sender {
     double delayInSeconds = 2.0;
     
-    [self playMusic:@"click"];
+    [self playMusic:@"click" fileType:@"mp3"];
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         [wplayer stop];

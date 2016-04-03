@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0E4E5E1CB0ACA000880482 /* choose_size.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D0E4E5A1CB0ACA000880482 /* choose_size.wav */; };
+		4D0E4E5F1CB0ACA000880482 /* choose_style.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D0E4E5B1CB0ACA000880482 /* choose_style.wav */; };
+		4D0E4E601CB0ACA000880482 /* enter_gambol.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D0E4E5C1CB0ACA000880482 /* enter_gambol.wav */; };
+		4D0E4E611CB0ACA000880482 /* wear_shoe.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D0E4E5D1CB0ACA000880482 /* wear_shoe.wav */; };
+		4D205C331CB0D00900A5977F /* btn_donrem_over.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D205C311CB0D00900A5977F /* btn_donrem_over.png */; };
+		4D205C341CB0D00900A5977F /* btn_donrem.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D205C321CB0D00900A5977F /* btn_donrem.png */; };
+		4D3944AF1CB0B1EA00B15C59 /* Superclarendon Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D3944AE1CB0B1EA00B15C59 /* Superclarendon Bold.ttf */; };
 		4D4344211CA6FD9F0042710B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4344201CA6FD9F0042710B /* main.m */; };
 		4D4344241CA6FD9F0042710B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4344231CA6FD9F0042710B /* AppDelegate.m */; };
 		4D4344271CA6FD9F0042710B /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4344261CA6FD9F0042710B /* StartViewController.m */; };
@@ -16,8 +23,6 @@
 		4D4344491CA6FED20042710B /* bg_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4344391CA6FED20042710B /* bg_3.png */; };
 		4D43444A1CA6FED20042710B /* bg_enter.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D43443A1CA6FED20042710B /* bg_enter.png */; };
 		4D43444B1CA6FED20042710B /* bg_selectshoes.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D43443B1CA6FED20042710B /* bg_selectshoes.png */; };
-		4D43444C1CA6FED20042710B /* btn_Enter_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D43443C1CA6FED20042710B /* btn_Enter_normal.png */; };
-		4D43444D1CA6FED20042710B /* btn_Enter_over.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D43443D1CA6FED20042710B /* btn_Enter_over.png */; };
 		4D43444E1CA6FED20042710B /* btnSize_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D43443E1CA6FED20042710B /* btnSize_normal.png */; };
 		4D43444F1CA6FED20042710B /* btnSize_over.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D43443F1CA6FED20042710B /* btnSize_over.png */; };
 		4D4344501CA6FED20042710B /* Ezy_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4344401CA6FED20042710B /* Ezy_normal.png */; };
@@ -38,21 +43,35 @@
 		4D43446D1CA744590042710B /* SizeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D43446C1CA744590042710B /* SizeCollectionViewController.m */; };
 		4D4344701CA746C00042710B /* SizeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D43446F1CA746C00042710B /* SizeCollectionViewCell.m */; };
 		4D4344731CA79A610042710B /* ShoeOnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4344721CA79A610042710B /* ShoeOnViewController.m */; };
-		4D4344761CA7A5240042710B /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4344751CA7A5240042710B /* MovieViewController.m */; };
 		4D43447A1CA7A7E60042710B /* KinectBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4344791CA7A7E60042710B /* KinectBG.jpg */; };
 		4D43447D1CA7B69C0042710B /* KinectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D43447C1CA7B69C0042710B /* KinectViewController.m */; };
 		4D489B251CAB9A1D0010C974 /* bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D489B231CAB9A1D0010C974 /* bg.mp3 */; };
 		4D489B261CAB9A1D0010C974 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D489B241CAB9A1D0010C974 /* click.mp3 */; };
-		4D489B2A1CAB9E720010C974 /* choose_size.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D489B271CAB9E720010C974 /* choose_size.mp3 */; };
-		4D489B2B1CAB9E720010C974 /* choose_style.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D489B281CAB9E720010C974 /* choose_style.mp3 */; };
-		4D489B2C1CAB9E720010C974 /* wear_shoe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D489B291CAB9E720010C974 /* wear_shoe.mp3 */; };
 		4D489B2E1CABA8DE0010C974 /* hello.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D489B2D1CABA8DE0010C974 /* hello.mp3 */; };
-		4D489B301CABB2CD0010C974 /* mario.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D489B2F1CABB2CD0010C974 /* mario.mp3 */; };
 		4D489B341CABC1B20010C974 /* Battambang-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D489B321CABBC5E0010C974 /* Battambang-Bold.ttf */; };
 		4D489B351CABC1B20010C974 /* Battambang-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D489B331CABBC5E0010C974 /* Battambang-Regular.ttf */; };
+		4D5263E01CB0AE3A00270782 /* enter_btn_over.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D5263DE1CB0AE3A00270782 /* enter_btn_over.png */; };
+		4D5263E11CB0AE3A00270782 /* enter_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D5263DF1CB0AE3A00270782 /* enter_btn.png */; };
+		4DBE215B1CB0BA6100F26FB2 /* btn_Enter_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DBE21591CB0BA6100F26FB2 /* btn_Enter_normal.png */; };
+		4DBE215C1CB0BA6100F26FB2 /* btn_Enter_over.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DBE215A1CB0BA6100F26FB2 /* btn_Enter_over.png */; };
+		4DBE215D1CB0BDB700F26FB2 /* Kantumruy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D3944AB1CB0B01900B15C59 /* Kantumruy-Bold.ttf */; };
+		4DBE215E1CB0BDB900F26FB2 /* Kantumruy-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D3944AC1CB0B01900B15C59 /* Kantumruy-Light.ttf */; };
+		4DBE215F1CB0BDBB00F26FB2 /* Kantumruy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D3944AD1CB0B01900B15C59 /* Kantumruy-Regular.ttf */; };
+		4DBE21601CB0BDBE00F26FB2 /* Superclarendon Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D0D73A41CB0B307008FA032 /* Superclarendon Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D0D73A41CB0B307008FA032 /* Superclarendon Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Superclarendon Regular.ttf"; path = "assets/font/Superclarendon Regular.ttf"; sourceTree = "<group>"; };
+		4D0E4E5A1CB0ACA000880482 /* choose_size.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = choose_size.wav; path = assets/sound/choose_size.wav; sourceTree = "<group>"; };
+		4D0E4E5B1CB0ACA000880482 /* choose_style.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = choose_style.wav; path = assets/sound/choose_style.wav; sourceTree = "<group>"; };
+		4D0E4E5C1CB0ACA000880482 /* enter_gambol.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = enter_gambol.wav; path = assets/sound/enter_gambol.wav; sourceTree = "<group>"; };
+		4D0E4E5D1CB0ACA000880482 /* wear_shoe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = wear_shoe.wav; path = assets/sound/wear_shoe.wav; sourceTree = "<group>"; };
+		4D205C311CB0D00900A5977F /* btn_donrem_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_donrem_over.png; path = assets/images/btn_donrem_over.png; sourceTree = "<group>"; };
+		4D205C321CB0D00900A5977F /* btn_donrem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_donrem.png; path = assets/images/btn_donrem.png; sourceTree = "<group>"; };
+		4D3944AB1CB0B01900B15C59 /* Kantumruy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kantumruy-Bold.ttf"; path = "assets/font/Kantumruy-Bold.ttf"; sourceTree = "<group>"; };
+		4D3944AC1CB0B01900B15C59 /* Kantumruy-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kantumruy-Light.ttf"; path = "assets/font/Kantumruy-Light.ttf"; sourceTree = "<group>"; };
+		4D3944AD1CB0B01900B15C59 /* Kantumruy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kantumruy-Regular.ttf"; path = "assets/font/Kantumruy-Regular.ttf"; sourceTree = "<group>"; };
+		4D3944AE1CB0B1EA00B15C59 /* Superclarendon Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Superclarendon Bold.ttf"; path = "assets/font/Superclarendon Bold.ttf"; sourceTree = "<group>"; };
 		4D43441C1CA6FD9F0042710B /* GambolChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GambolChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4344201CA6FD9F0042710B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4D4344221CA6FD9F0042710B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,8 +85,6 @@
 		4D4344391CA6FED20042710B /* bg_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_3.png; path = assets/images/bg_3.png; sourceTree = "<group>"; };
 		4D43443A1CA6FED20042710B /* bg_enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_enter.png; path = assets/images/bg_enter.png; sourceTree = "<group>"; };
 		4D43443B1CA6FED20042710B /* bg_selectshoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_selectshoes.png; path = assets/images/bg_selectshoes.png; sourceTree = "<group>"; };
-		4D43443C1CA6FED20042710B /* btn_Enter_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_Enter_normal.png; path = assets/images/btn_Enter_normal.png; sourceTree = "<group>"; };
-		4D43443D1CA6FED20042710B /* btn_Enter_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_Enter_over.png; path = assets/images/btn_Enter_over.png; sourceTree = "<group>"; };
 		4D43443E1CA6FED20042710B /* btnSize_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnSize_normal.png; path = assets/images/btnSize_normal.png; sourceTree = "<group>"; };
 		4D43443F1CA6FED20042710B /* btnSize_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnSize_over.png; path = assets/images/btnSize_over.png; sourceTree = "<group>"; };
 		4D4344401CA6FED20042710B /* Ezy_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ezy_normal.png; path = assets/images/Ezy_normal.png; sourceTree = "<group>"; };
@@ -93,20 +110,18 @@
 		4D43446F1CA746C00042710B /* SizeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeCollectionViewCell.m; sourceTree = "<group>"; };
 		4D4344711CA79A610042710B /* ShoeOnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoeOnViewController.h; sourceTree = "<group>"; };
 		4D4344721CA79A610042710B /* ShoeOnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoeOnViewController.m; sourceTree = "<group>"; };
-		4D4344741CA7A5240042710B /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
-		4D4344751CA7A5240042710B /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
 		4D4344791CA7A7E60042710B /* KinectBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = KinectBG.jpg; path = assets/images/KinectBG.jpg; sourceTree = "<group>"; };
 		4D43447B1CA7B69C0042710B /* KinectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinectViewController.h; sourceTree = "<group>"; };
 		4D43447C1CA7B69C0042710B /* KinectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinectViewController.m; sourceTree = "<group>"; };
 		4D489B231CAB9A1D0010C974 /* bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bg.mp3; path = assets/sound/bg.mp3; sourceTree = "<group>"; };
 		4D489B241CAB9A1D0010C974 /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = click.mp3; path = assets/sound/click.mp3; sourceTree = "<group>"; };
-		4D489B271CAB9E720010C974 /* choose_size.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = choose_size.mp3; path = assets/sound/choose_size.mp3; sourceTree = "<group>"; };
-		4D489B281CAB9E720010C974 /* choose_style.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = choose_style.mp3; path = assets/sound/choose_style.mp3; sourceTree = "<group>"; };
-		4D489B291CAB9E720010C974 /* wear_shoe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wear_shoe.mp3; path = assets/sound/wear_shoe.mp3; sourceTree = "<group>"; };
 		4D489B2D1CABA8DE0010C974 /* hello.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hello.mp3; sourceTree = "<group>"; };
-		4D489B2F1CABB2CD0010C974 /* mario.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mario.mp3; path = assets/sound/mario.mp3; sourceTree = "<group>"; };
 		4D489B321CABBC5E0010C974 /* Battambang-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Battambang-Bold.ttf"; path = "assets/font/Battambang-Bold.ttf"; sourceTree = "<group>"; };
 		4D489B331CABBC5E0010C974 /* Battambang-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Battambang-Regular.ttf"; path = "assets/font/Battambang-Regular.ttf"; sourceTree = "<group>"; };
+		4D5263DE1CB0AE3A00270782 /* enter_btn_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = enter_btn_over.png; path = assets/images/enter_btn_over.png; sourceTree = "<group>"; };
+		4D5263DF1CB0AE3A00270782 /* enter_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = enter_btn.png; path = assets/images/enter_btn.png; sourceTree = "<group>"; };
+		4DBE21591CB0BA6100F26FB2 /* btn_Enter_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_Enter_normal.png; path = assets/images/btn_Enter_normal.png; sourceTree = "<group>"; };
+		4DBE215A1CB0BA6100F26FB2 /* btn_Enter_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_Enter_over.png; path = assets/images/btn_Enter_over.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +169,6 @@
 				4D43446F1CA746C00042710B /* SizeCollectionViewCell.m */,
 				4D4344711CA79A610042710B /* ShoeOnViewController.h */,
 				4D4344721CA79A610042710B /* ShoeOnViewController.m */,
-				4D4344741CA7A5240042710B /* MovieViewController.h */,
-				4D4344751CA7A5240042710B /* MovieViewController.m */,
 				4D43447B1CA7B69C0042710B /* KinectViewController.h */,
 				4D43447C1CA7B69C0042710B /* KinectViewController.m */,
 				4D4344281CA6FD9F0042710B /* Main.storyboard */,
@@ -189,12 +202,16 @@
 		4D4344371CA6FE5C0042710B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4D205C311CB0D00900A5977F /* btn_donrem_over.png */,
+				4D205C321CB0D00900A5977F /* btn_donrem.png */,
+				4DBE21591CB0BA6100F26FB2 /* btn_Enter_normal.png */,
+				4DBE215A1CB0BA6100F26FB2 /* btn_Enter_over.png */,
+				4D5263DE1CB0AE3A00270782 /* enter_btn_over.png */,
+				4D5263DF1CB0AE3A00270782 /* enter_btn.png */,
 				4D4344791CA7A7E60042710B /* KinectBG.jpg */,
 				4D4344391CA6FED20042710B /* bg_3.png */,
 				4D43443A1CA6FED20042710B /* bg_enter.png */,
 				4D43443B1CA6FED20042710B /* bg_selectshoes.png */,
-				4D43443C1CA6FED20042710B /* btn_Enter_normal.png */,
-				4D43443D1CA6FED20042710B /* btn_Enter_over.png */,
 				4D43443E1CA6FED20042710B /* btnSize_normal.png */,
 				4D43443F1CA6FED20042710B /* btnSize_over.png */,
 				4D4344401CA6FED20042710B /* Ezy_normal.png */,
@@ -224,11 +241,11 @@
 		4D489B221CAB99FA0010C974 /* sound */ = {
 			isa = PBXGroup;
 			children = (
+				4D0E4E5A1CB0ACA000880482 /* choose_size.wav */,
+				4D0E4E5B1CB0ACA000880482 /* choose_style.wav */,
+				4D0E4E5C1CB0ACA000880482 /* enter_gambol.wav */,
+				4D0E4E5D1CB0ACA000880482 /* wear_shoe.wav */,
 				4D489B2D1CABA8DE0010C974 /* hello.mp3 */,
-				4D489B271CAB9E720010C974 /* choose_size.mp3 */,
-				4D489B281CAB9E720010C974 /* choose_style.mp3 */,
-				4D489B291CAB9E720010C974 /* wear_shoe.mp3 */,
-				4D489B2F1CABB2CD0010C974 /* mario.mp3 */,
 				4D489B231CAB9A1D0010C974 /* bg.mp3 */,
 				4D489B241CAB9A1D0010C974 /* click.mp3 */,
 			);
@@ -238,7 +255,12 @@
 		4D489B311CABBC530010C974 /* font */ = {
 			isa = PBXGroup;
 			children = (
+				4D0D73A41CB0B307008FA032 /* Superclarendon Regular.ttf */,
+				4D3944AE1CB0B1EA00B15C59 /* Superclarendon Bold.ttf */,
 				4D489B321CABBC5E0010C974 /* Battambang-Bold.ttf */,
+				4D3944AB1CB0B01900B15C59 /* Kantumruy-Bold.ttf */,
+				4D3944AC1CB0B01900B15C59 /* Kantumruy-Light.ttf */,
+				4D3944AD1CB0B01900B15C59 /* Kantumruy-Regular.ttf */,
 				4D489B331CABBC5E0010C974 /* Battambang-Regular.ttf */,
 			);
 			name = font;
@@ -303,37 +325,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D489B341CABC1B20010C974 /* Battambang-Bold.ttf in Resources */,
+				4D5263E01CB0AE3A00270782 /* enter_btn_over.png in Resources */,
 				4D489B351CABC1B20010C974 /* Battambang-Regular.ttf in Resources */,
+				4D205C341CB0D00900A5977F /* btn_donrem.png in Resources */,
 				4D4344521CA6FED20042710B /* logo.png in Resources */,
 				4D4344541CA6FED20042710B /* Zah_over.png in Resources */,
 				4D4344601CA6FF050042710B /* Zeek.mp4 in Resources */,
+				4D0E4E5F1CB0ACA000880482 /* choose_style.wav in Resources */,
 				4D489B261CAB9A1D0010C974 /* click.mp3 in Resources */,
-				4D489B2C1CAB9E720010C974 /* wear_shoe.mp3 in Resources */,
-				4D43444C1CA6FED20042710B /* btn_Enter_normal.png in Resources */,
 				4D43444E1CA6FED20042710B /* btnSize_normal.png in Resources */,
 				4D489B2E1CABA8DE0010C974 /* hello.mp3 in Resources */,
-				4D43444D1CA6FED20042710B /* btn_Enter_over.png in Resources */,
+				4D0E4E5E1CB0ACA000880482 /* choose_size.wav in Resources */,
 				4D4344571CA6FED20042710B /* Zeek_normal.png in Resources */,
 				4D4344551CA6FED20042710B /* Zapp_normal.png in Resources */,
 				4D43442F1CA6FD9F0042710B /* LaunchScreen.storyboard in Resources */,
 				4D43442C1CA6FD9F0042710B /* Assets.xcassets in Resources */,
 				4D4344491CA6FED20042710B /* bg_3.png in Resources */,
 				4D43445F1CA6FF050042710B /* Zapp.mp4 in Resources */,
-				4D489B301CABB2CD0010C974 /* mario.mp3 in Resources */,
 				4D4344511CA6FED20042710B /* Ezy_over.png in Resources */,
+				4D3944AF1CB0B1EA00B15C59 /* Superclarendon Bold.ttf in Resources */,
 				4D4344531CA6FED20042710B /* Zah_normal.png in Resources */,
-				4D489B2B1CAB9E720010C974 /* choose_style.mp3 in Resources */,
 				4D43444A1CA6FED20042710B /* bg_enter.png in Resources */,
+				4DBE21601CB0BDBE00F26FB2 /* Superclarendon Regular.ttf in Resources */,
+				4DBE215B1CB0BA6100F26FB2 /* btn_Enter_normal.png in Resources */,
 				4D43444F1CA6FED20042710B /* btnSize_over.png in Resources */,
 				4D43442A1CA6FD9F0042710B /* Main.storyboard in Resources */,
 				4D43444B1CA6FED20042710B /* bg_selectshoes.png in Resources */,
-				4D489B2A1CAB9E720010C974 /* choose_size.mp3 in Resources */,
 				4D43447A1CA7A7E60042710B /* KinectBG.jpg in Resources */,
 				4D4344581CA6FED20042710B /* Zeek_over.png in Resources */,
 				4D489B251CAB9A1D0010C974 /* bg.mp3 in Resources */,
+				4D0E4E601CB0ACA000880482 /* enter_gambol.wav in Resources */,
+				4DBE215C1CB0BA6100F26FB2 /* btn_Enter_over.png in Resources */,
 				4D43445D1CA6FF050042710B /* Ezy.mp4 in Resources */,
 				4D4344561CA6FED20042710B /* Zapp_over.png in Resources */,
+				4DBE215E1CB0BDB900F26FB2 /* Kantumruy-Light.ttf in Resources */,
+				4DBE215F1CB0BDBB00F26FB2 /* Kantumruy-Regular.ttf in Resources */,
+				4D205C331CB0D00900A5977F /* btn_donrem_over.png in Resources */,
+				4DBE215D1CB0BDB700F26FB2 /* Kantumruy-Bold.ttf in Resources */,
 				4D43445E1CA6FF050042710B /* Zah.mp4 in Resources */,
+				4D5263E11CB0AE3A00270782 /* enter_btn.png in Resources */,
+				4D0E4E611CB0ACA000880482 /* wear_shoe.wav in Resources */,
 				4D4344501CA6FED20042710B /* Ezy_normal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +377,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D4344691CA716A50042710B /* ShoeCollectionViewCell.m in Sources */,
-				4D4344761CA7A5240042710B /* MovieViewController.m in Sources */,
 				4D4344271CA6FD9F0042710B /* StartViewController.m in Sources */,
 				4D4344661CA710BA0042710B /* SelectGameCollectionViewController.m in Sources */,
 				4D4344241CA6FD9F0042710B /* AppDelegate.m in Sources */,
