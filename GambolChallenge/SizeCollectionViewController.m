@@ -20,6 +20,7 @@ AVAudioPlayer *vplayer;
 AVAudioPlayer *cplayer;
 static NSString * const reuseIdentifier = @"SizeCell";
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Uncomment the following line to preserve selection between presentations
@@ -46,6 +47,7 @@ static NSString * const reuseIdentifier = @"SizeCell";
     {
         ShoeOnViewController *destViewController = segue.destinationViewController;
         destViewController.videoName = self.videoName;
+        destViewController.shoeSize = _sizes[[sender tag]];
     }
 }
 #pragma mark <UICollectionViewDataSource>
@@ -90,6 +92,7 @@ static NSString * const reuseIdentifier = @"SizeCell";
     UIImage *imageOver = [UIImage imageNamed: nameOver];
     [cell.sizeButton setBackgroundImage: imageOver forState:UIControlStateSelected];
     [cell.sizeButton setBackgroundImage: imageOver forState:UIControlStateHighlighted];
+    [cell.sizeButton setTag:row];
     return cell;
 }
 

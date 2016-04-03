@@ -22,6 +22,7 @@ AVAudioPlayer *dplayer;
     [super viewDidLoad];
     [self setBackgroundImage];
     [self playMusic:@"wear_shoe"];
+    self.shoeDetailLabel.text = [NSString stringWithFormat:@"%@ - %@", self.videoName, self.shoeSize];
     // Do any additional setup after loading the view.
 }
 

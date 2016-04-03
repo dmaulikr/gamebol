@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0C6DF11CB1164F00DBF4A3 /* Game-Ezy.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0C6DED1CB1164F00DBF4A3 /* Game-Ezy.png */; };
+		4D0C6DF21CB1164F00DBF4A3 /* Game-Zah.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0C6DEE1CB1164F00DBF4A3 /* Game-Zah.png */; };
+		4D0C6DF31CB1164F00DBF4A3 /* Game-Zapp.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0C6DEF1CB1164F00DBF4A3 /* Game-Zapp.png */; };
+		4D0C6DF41CB1164F00DBF4A3 /* Game-Zeek.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0C6DF01CB1164F00DBF4A3 /* Game-Zeek.png */; };
 		4D0E4E5E1CB0ACA000880482 /* choose_size.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D0E4E5A1CB0ACA000880482 /* choose_size.wav */; };
 		4D0E4E5F1CB0ACA000880482 /* choose_style.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D0E4E5B1CB0ACA000880482 /* choose_style.wav */; };
 		4D0E4E601CB0ACA000880482 /* enter_gambol.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D0E4E5C1CB0ACA000880482 /* enter_gambol.wav */; };
@@ -61,6 +65,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D0C6DED1CB1164F00DBF4A3 /* Game-Ezy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Game-Ezy.png"; path = "assets/images/Game-Ezy.png"; sourceTree = "<group>"; };
+		4D0C6DEE1CB1164F00DBF4A3 /* Game-Zah.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Game-Zah.png"; path = "assets/images/Game-Zah.png"; sourceTree = "<group>"; };
+		4D0C6DEF1CB1164F00DBF4A3 /* Game-Zapp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Game-Zapp.png"; path = "assets/images/Game-Zapp.png"; sourceTree = "<group>"; };
+		4D0C6DF01CB1164F00DBF4A3 /* Game-Zeek.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Game-Zeek.png"; path = "assets/images/Game-Zeek.png"; sourceTree = "<group>"; };
 		4D0D73A41CB0B307008FA032 /* Superclarendon Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Superclarendon Regular.ttf"; path = "assets/font/Superclarendon Regular.ttf"; sourceTree = "<group>"; };
 		4D0E4E5A1CB0ACA000880482 /* choose_size.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = choose_size.wav; path = assets/sound/choose_size.wav; sourceTree = "<group>"; };
 		4D0E4E5B1CB0ACA000880482 /* choose_style.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = choose_style.wav; path = assets/sound/choose_style.wav; sourceTree = "<group>"; };
@@ -202,6 +210,10 @@
 		4D4344371CA6FE5C0042710B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4D0C6DED1CB1164F00DBF4A3 /* Game-Ezy.png */,
+				4D0C6DEE1CB1164F00DBF4A3 /* Game-Zah.png */,
+				4D0C6DEF1CB1164F00DBF4A3 /* Game-Zapp.png */,
+				4D0C6DF01CB1164F00DBF4A3 /* Game-Zeek.png */,
 				4D205C311CB0D00900A5977F /* btn_donrem_over.png */,
 				4D205C321CB0D00900A5977F /* btn_donrem.png */,
 				4DBE21591CB0BA6100F26FB2 /* btn_Enter_normal.png */,
@@ -337,11 +349,14 @@
 				4D489B2E1CABA8DE0010C974 /* hello.mp3 in Resources */,
 				4D0E4E5E1CB0ACA000880482 /* choose_size.wav in Resources */,
 				4D4344571CA6FED20042710B /* Zeek_normal.png in Resources */,
+				4D0C6DF21CB1164F00DBF4A3 /* Game-Zah.png in Resources */,
+				4D0C6DF41CB1164F00DBF4A3 /* Game-Zeek.png in Resources */,
 				4D4344551CA6FED20042710B /* Zapp_normal.png in Resources */,
 				4D43442F1CA6FD9F0042710B /* LaunchScreen.storyboard in Resources */,
 				4D43442C1CA6FD9F0042710B /* Assets.xcassets in Resources */,
 				4D4344491CA6FED20042710B /* bg_3.png in Resources */,
 				4D43445F1CA6FF050042710B /* Zapp.mp4 in Resources */,
+				4D0C6DF31CB1164F00DBF4A3 /* Game-Zapp.png in Resources */,
 				4D4344511CA6FED20042710B /* Ezy_over.png in Resources */,
 				4D3944AF1CB0B1EA00B15C59 /* Superclarendon Bold.ttf in Resources */,
 				4D4344531CA6FED20042710B /* Zah_normal.png in Resources */,
@@ -354,6 +369,7 @@
 				4D43447A1CA7A7E60042710B /* KinectBG.jpg in Resources */,
 				4D4344581CA6FED20042710B /* Zeek_over.png in Resources */,
 				4D489B251CAB9A1D0010C974 /* bg.mp3 in Resources */,
+				4D0C6DF11CB1164F00DBF4A3 /* Game-Ezy.png in Resources */,
 				4D0E4E601CB0ACA000880482 /* enter_gambol.wav in Resources */,
 				4DBE215C1CB0BA6100F26FB2 /* btn_Enter_over.png in Resources */,
 				4D43445D1CA6FF050042710B /* Ezy.mp4 in Resources */,

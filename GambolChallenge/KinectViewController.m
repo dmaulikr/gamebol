@@ -13,7 +13,6 @@
 @import Foundation;
 
 @interface KinectViewController ()
-
 @end
 
 AVPlayer *movieplayer;
@@ -65,7 +64,7 @@ AVPlayerViewController *moviecontroller;
 
 - (void) performTransition {
     [moviecontroller.view removeFromSuperview];
-    [self setBackgroundImage];
+    [self setBackgroundImage: [NSString stringWithFormat:@"Game-%@", self.videoName]];
     [self performSelector:@selector(goBackToEnterScreen:) withObject:nil afterDelay:7.0];
 }
 - (void)didReceiveMemoryWarning {
@@ -74,9 +73,9 @@ AVPlayerViewController *moviecontroller;
 }
 
 
-- (void) setBackgroundImage {
+- (void) setBackgroundImage: (NSString*) imageName{
     UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"KinectBG.jpg"] drawInRect:self.view.bounds];
+    [[UIImage imageNamed:imageName] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     

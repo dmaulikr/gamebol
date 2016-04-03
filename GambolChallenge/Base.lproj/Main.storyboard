@@ -187,7 +187,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="600" height="275"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="តើអ្នកពាក់ទំហំស្បែកជើងលេងប៉ុន្មាន" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8VC-xH-sK4">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="តើអ្នកពាក់ស្បែកជើងលេងប៉ុន្មាន" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8VC-xH-sK4">
                                     <rect key="frame" x="0.0" y="199" width="592" height="67"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="67" id="lV1-aM-biA"/>
@@ -273,6 +273,12 @@
                                     <segue destination="QTh-e5-bpz" kind="show" identifier="Kinect" id="cLq-tZ-hw9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwA-JN-clP">
+                                <rect key="frame" x="383" y="521" width="217" height="54"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -283,6 +289,7 @@
                     </view>
                     <connections>
                         <outlet property="readyButton" destination="V5b-xj-5X9" id="eSu-E6-ehq"/>
+                        <outlet property="shoeDetailLabel" destination="FwA-JN-clP" id="aRu-R9-DZG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hm8-Hc-L34" userLabel="First Responder" sceneMemberID="firstResponder"/>
